@@ -1,0 +1,623 @@
+{% if product.tags contains "HideATC" %}
+        <p style="color:red; font-weight: bold;">
+          PRE-BOOKING WILL START <i>8th MARCH, 8:00PM (PST),</i><br/> STAY IN TOUCH WITH US!
+        </p>
+  {% endif %}
+   {% if product.tags contains "em_indefinite_time" %}
+        <p style="color:red; font-weight: bold;">
+          THIS ARTICLE HAS AN INDEFINITE DELIVERY TIME.
+        </p>
+  {% endif %} 
+<div class="custom-style-options">
+      {% if product.tags contains "em_style_openmaxi" %}
+    <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="open">
+            <input type="radio" id="open" name="properties[Style]" value="Open" checked> 
+            <label for="Open">Open</label>
+          </li>
+          
+          <li class="Maxi">
+            <input type="radio" id="Maxi" name="properties[Style]" value="Maxi"> 
+            <label for="Maxi">Maxi</label>
+          </li>
+        </ul>
+        {% elsif product.tags contains "em_style_maxilehnga" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Maxi">
+            <input type="radio" id="Maxi" name="properties[Style]" value="Maxi" checked> 
+            <label for="Maxi">Maxi</label>
+          </li>
+          
+          <li class="Lehnga">
+            <input type="radio" id="Lehnga" name="properties[Style]" value="Lehnga"> 
+            <label for="Lehnga">Lehnga</label>
+          </li>
+        </ul>
+       {% elsif product.tags contains "em_style_maxipeplum" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Maxi">
+            <input type="radio" id="Maxi" name="properties[Style]" value="Maxi" checked> 
+            <label for="Maxi">Maxi</label>
+          </li>
+          
+          <li class="Peplum">
+            <input type="radio" id="Peplum" name="properties[Style]" value="Peplum"> 
+            <label for="Peplum">Peplum</label>
+          </li>
+        </ul>
+       {% elsif product.tags contains "em_style_maxisaree" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Maxi">
+            <input type="radio" id="Maxi" name="properties[Style]" value="Maxi" checked> 
+            <label for="Maxi">Maxi</label>
+          </li>
+          
+          <li class="Saree">
+            <input type="radio" id="Saree" name="properties[Style]" value="Saree"> 
+            <label for="Saree">Saree</label>
+          </li>
+        </ul>
+  <!-- Ecomatives Code -->
+  {% elsif product.tags contains "em_style_peplumangrakha" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Peplum">
+            <input type="radio" id="Peplum" name="properties[Style]" value="Peplum" checked> 
+            <label for="Peplum">Peplum</label>
+          </li>
+          
+          <li class="Angarkha">
+            <input type="radio" id="Angarkha" name="properties[Style]" value="Angarkha"> 
+            <label for="Angarkha">Angarkha</label>
+          </li>
+        </ul>
+{% elsif product.tags contains "em_style_lehengasaree" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Lehenga">
+            <input type="radio" id="Lehenga" name="properties[Style]" value="Lehenga" checked> 
+            <label for="Lehenga">Lehenga</label>
+          </li>
+          
+          <li class="Saree">
+            <input type="radio" id="Saree" name="properties[Style]" value="Saree"> 
+            <label for="Saree">Saree</label>
+          </li>
+        </ul>
+        {% elsif product.tags contains "em_style_lehengamaxi" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Lehenga">
+            <input type="radio" id="Lehenga" name="properties[Style]" value="Lehenga" checked> 
+            <label for="Lehenga">Lehenga</label>
+          </li>
+          
+          <li class="Maxi">
+            <input type="radio" id="Maxi" name="properties[Style]" value="Maxi"> 
+            <label for="Maxi">Maxi</label>
+          </li>
+        </ul>
+        {% elsif product.tags contains "em_style_jumpsuitshirt" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="jump_suit">
+            <input type="radio" id="Jump Suit" name="properties[Style]" value="Jump Suit" checked> 
+            <label for="Jump Suit">Jump Suit</label>
+          </li>
+          
+          <li class="Shirt">
+            <input type="radio" id="Shirt" name="properties[Style]" value="Shirt"> 
+            <label for="Shirt">Shirt</label>
+          </li>
+        </ul>
+        {% elsif product.tags contains "em_style_fms" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Flare_Shirt">
+            <input type="radio" id="Peplum" name="properties[Style]" value="Flare Shirt" checked> 
+            <label for="Flare_Shirt">Flare Shirt</label>
+          </li>
+          
+          <li class="Maxi">
+            <input type="radio" id="Angarkha" name="properties[Style]" value="Maxi"> 
+            <label for="Maxi">Maxi</label>
+          </li>
+          <li class="Shirt">
+            <input type="radio" id="Angarkha" name="properties[Style]" value="Shirt"> 
+            <label for="Shirt">Shirt</label>
+          </li>
+        </ul>
+      {% elsif product.tags contains "em_style_maxiangrakha" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Maxi">
+            <input type="radio" id="Maxi" name="properties[Style]" value="Maxi" checked> 
+            <label for="Maxi">Maxi</label>
+          </li>
+          
+          <li class="Angrakha">
+            <input type="radio" id="Angrakha" name="properties[Style]" value="Angrakha"> 
+            <label for="Angrakha">Angrakha</label>
+          </li>
+        </ul
+      {% elsif product.tags contains "em_style_longflare" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Long">
+            <input type="radio" id="LongShirt" name="properties[Style]" value="Long Shirt" checked> 
+            <label for="Long Shirt">Long Shirt</label>
+          </li>
+          
+          <li class="Flare Shirt">
+            <input type="radio" id="Flare" name="properties[Style]" value="Flare Shirt"> 
+            <label for="Flare Shirt">Flare Shirt</label>
+          </li>
+        </ul>
+       {% elsif product.tags contains "em_style_longssopgown" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="long Shirt">
+            <input type="radio" id="long Shirt" name="properties[Style]" value="Long Shirt" checked> 
+            <label for="Long Shirt">Long Shirt</label>
+          </li>
+          
+          <li class="Open Gown">
+            <input type="radio" id="Open Gown" name="properties[Style]" value="Open Gown"> 
+            <label for="Open Gown">Open Gown</label>
+          </li>
+        </ul>
+       {% elsif product.tags contains "em_style_maxishirt" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Maxi ">
+            <input type="radio" id="Maxi" name="properties[Style]" value="Maxi" checked> 
+            <label for="Maxi ">Maxi </label>
+          </li>
+          
+          <li class="Shirt">
+            <input type="radio" id="Shirt" name="properties[Style]" value="Shirt"> 
+            <label for="Shirt">Shirt</label>
+          </li>
+        </ul
+        {% elsif product.tags contains "em_style_angrakhaopngwn" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Angrakha">
+            <input type="radio" id="Angrakha" name="properties[Style]" value="Angrakha" checked> 
+            <label for="Angrakha">Angrakha </label>
+          </li>
+          
+          <li class="Open Gown">
+            <input type="radio" id="OpenGown" name="properties[Style]" value="Open Gown"> 
+            <label for="Open Gown">Open Gown</label>
+          </li>
+        </ul>
+       {% elsif product.tags contains "em_style_lehngasaree" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Saree">
+            <input type="radio" id="Saree" name="properties[Style]" value="Saree" checked> 
+            <label for="Saree">Saree</label>
+          </li>
+          
+          <li class="Lehnga">
+            <input type="radio" id="Lehnga" name="properties[Style]" value="Lehnga"> 
+            <label for="Lehnga">Lehnga</label>
+          </li>
+        </ul>
+
+     {% elsif product.tags contains "em_style_shirtflare" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Shirt">
+            <input type="radio" id="Shirt" name="properties[Style]" value="Shirt" checked> 
+            <label for="Shirt">Shirt</label>
+          </li>
+          
+          <li class="Flare">
+            <input type="radio" id="Flare" name="properties[Style]" value="Flare"> 
+            <label for="Flare">Flare</label>
+          </li>
+        </ul>
+
+       {% elsif product.tags contains "em_style_openshirt" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Open">
+            <input type="radio" id="Open" name="properties[Style]" value="Open" checked> 
+            <label for="Open">Open</label>
+          </li>
+          
+          <li class="Shirt">
+            <input type="radio" id="Shirt" name="properties[Style]" value="Shirt"> 
+            <label for="Shirt">Shirt</label>
+          </li>
+        </ul>
+
+       {% elsif product.tags contains "em_style_lehengapeplum" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Lehenga">
+            <input type="radio" id="Lehenga" name="properties[Style]" value="Lehenga" checked> 
+            <label for="Lehenga">Lehenga</label>
+          </li>
+          
+          <li class="Peplum">
+            <input type="radio" id="Peplum" name="properties[Style]" value="Peplum"> 
+            <label for="Peplum">Peplum</label>
+          </li>
+        </ul>
+
+      {% elsif product.tags contains "em_style_maxiflare" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Maxi">
+            <input type="radio" id="Maxi" name="properties[Style]" value="Maxi" checked> 
+            <label for="Maxi">Maxi</label>
+          </li>
+          
+          <li class="Flare">
+            <input type="radio" id="Flare" name="properties[Style]" value="Flare"> 
+            <label for="Flare">Flare</label>
+          </li>
+          </ul>
+
+       {% elsif product.tags contains "em_style_frockshirt" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Frock">
+            <input type="radio" id="Frock" name="properties[Style]" value="Frock" checked> 
+            <label for="Frock">Frock</label>
+          </li>
+          
+          <li class="Shirt">
+            <input type="radio" id="Shirt" name="properties[Style]" value="Shirt"> 
+            <label for="Shirt">Shirt</label>
+          </li>
+          </ul>
+
+        
+
+        {% elsif product.tags contains "em_style_shortlong" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Short">
+            <input type="radio" id="Short" name="properties[Style]" value="Short" checked> 
+            <label for="Short">Short</label>
+          </li>
+          
+          <li class="Long">
+            <input type="radio" id="Long" name="properties[Style]" value="Long"> 
+            <label for="Long">Long</label>
+          </li>
+          </ul>
+
+       {% elsif product.tags contains "em_style_openlehenga" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Open">
+            <input type="radio" id="Open" name="properties[Style]" value="Open" checked> 
+            <label for="Open">Open</label>
+          </li>
+          
+          <li class="Lehenga">
+            <input type="radio" id="Lehenga" name="properties[Style]" value="Lehenga"> 
+            <label for="Lehenga">Lehenga</label>
+          </li>
+          </ul>
+
+
+       {% elsif product.tags contains "em_style_lehengashirt" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Lehenga">
+            <input type="radio" id="Lehenga" name="properties[Style]" value="Lehenga" checked> 
+            <label for="Lehenga">Lehenga</label>
+          </li>
+          
+          <li class="Shirt">
+            <input type="radio" id="Shirt" name="properties[Style]" value="Shirt"> 
+            <label for="Shirt">Shirt</label>
+          </li>
+          </ul>
+
+
+        {% elsif product.tags contains "em_style_openangrakha" %}
+       <label class="radio-size-options" style="margin-top: 20px; font-style: normal;">Style</label>
+        <ul class="hdr-custom-size-opt radio-size-options hdr-custom-style-opt">
+          <li class="Open">
+            <input type="radio" id="Open" name="properties[Style]" value="Open" checked> 
+            <label for="Open">Open</label>
+          </li>
+          
+          <li class="Angrakha">
+            <input type="radio" id="Angrakha" name="properties[Style]" value="Angrakha"> 
+            <label for="Angrakha">Angrakha</label>
+          </li>
+          </ul>
+ {% endif %}
+</div>
+{% if product.tags contains "HideATC" %}
+  <style>
+    .btn {
+      display: none;
+    }
+
+    </style>
+  {% endif %}
+<style>
+  
+  /* Custom Size Option Styling Starts Here */  
+  
+/* Style for the textarea */
+textarea[data-name="comment"] {
+  width: 100%; /* Make the textarea full width */
+  height: 100px; /* Adjust the height as needed */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Add rounded corners */
+  padding: 5px; /* Adjust padding as needed */
+  font-size: 16px; /* Set the font size */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+
+
+  /* Remove the outer border and background */
+.cst-policy-sz {
+  list-style: none;
+}
+
+/* Style for each list item (individual option box) */
+.cst-policy-sz li {
+  display: inline-flex; /* Display list items inline */
+  align-items: center; /* Center content vertically */
+  margin-right: 10px; /* Adjust margin between list items */
+}
+
+/* Style for radio buttons */
+.cst-policy-sz input[type="radio"] {
+  margin-right: 5px; /* Adjust margin between radio button and label */
+  display: none; /* Hide the actual radio button */
+}
+
+/* Style for the labels (individual option boxes) */
+.cst-policy-sz label {
+  cursor: pointer; /* Add pointer cursor for labels */
+  padding: 5px 10px; /* Add padding to labels */
+  border: 1px solid #ccc; /* Add a border to labels */
+  border-radius: 4px; /* Add rounded corners to labels */
+  background-color: #fff; /* Background color for unselected options */
+}
+
+/* Style for the selected option label */
+.cst-policy-sz input[type="radio"]:checked + label {
+  background-color: #000; /* Background color for the selected option */
+  color: #fff; /* Text color for the selected option */
+}
+
+
+
+  .hdr-custom-size-opt {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.hdr-custom-size-opt li {
+    float: left;
+    margin: 0;
+    width: max-content;
+    height: 40px;
+    position: relative;
+}
+.hdr-custom-size-opt input[type=radio] {
+    opacity: .01;
+    z-index: 100;
+}
+.hdr-custom-size-opt label, .hdr-custom-size-opt input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.hdr-custom-size-opt label {
+    cursor: pointer;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    padding: 9px 11px;
+    margin: 3px 4px 7px 3px;
+    font-size: .8125em;
+    font-style: normal;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #e8e8e1;
+    color: #222323;
+}
+p.radio-size-options,
+label.radio-size-options1,
+p.line-item-property__field.Additional-Information1 {
+    width: 100%;
+}
+p.line-item-property__field.Additional-Information1 {
+    margin-top: 15px;
+}
+.hdr-custom-size-opt input[type=radio]:checked+label, .Checked+label {
+    background: rgba(0,0,0,.2);
+    box-shadow: 0 0 0 1px #000;
+}
+  .custom_size_option_addon_bottom,.custom_size_option_addon_shirt {
+    display: flex;
+  }
+    
+  .custom_size_option_addon input[type="text"] {
+    width: 100%;
+    height: 30px;
+  }
+    
+  .custom_size_option_addon label.label {
+    color: #000;
+    font-weight:normal;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 0;
+  }
+    
+  .custom_size_option_addon{
+    display: none;
+    width: 100%;
+/*     float: left; */
+    padding-bottom: 20px;
+  }
+    
+  .custom_size_option_addon_img {
+    width: 50%;
+/*     float: left; */
+    position: relative;
+  }
+    
+  .custom_size_option_addon_input {
+    width: 50%;
+/*     float: left; */
+    display: block;
+    padding: 0 0 0 10px;
+  }
+    
+  .custom_size_option_addon_input .input-full{
+	margin: 5px 0;
+    border: 1px solid #464646;
+  } 
+    
+  .custom_size_option_addon span {
+    padding-right: 15px;
+  }
+    
+  #product-variants .swatch:nth-child(5) .header {
+    width: 28% !Important;
+  }
+    
+  .custom_size_option_addon_img span {
+    padding: 0;
+    font-size: 12px;
+    position: absolute;
+  }
+    
+  span[data-size-name="trouser_waist"] {
+    top: 7%;
+    left: 50%;
+  }
+    
+  span[data-size-name="length"] {
+    top: 49%;
+    left: 12%;
+  }
+    
+  span[data-size-name="bottom"] {
+    bottom: 7%;
+    right: 28%;
+  }
+    
+  span[data-size-name="knee"] {
+    top: 52%;
+    right: 28%;
+  }
+    
+  span[data-size-name="thigh"] {
+    top: 33%;
+    right: 28%;
+  }
+    
+  span[data-size-name="hip"] {
+    left: 50%;
+    top: 15%;
+  }
+    
+  span[data-size-name="knee_length"] {
+    right: 9%;
+    top: 30%;
+  }
+    
+  span[data-size-name="shoulder"] {
+    top: -1px;
+    left: 54%;
+  }
+    
+  span[data-size-name="chest"] {
+    top: 14%;
+    left: 54%;
+  }
+    
+  span[data-size-name="waist"] {
+    top: 26%;
+    left: 54%;
+  }
+    
+  span[data-size-name="shirt_bottom"] {
+    bottom: 8%;
+    left: 54%;
+
+  }
+    
+  span[data-size-name="shirt_hip"] {
+    left: 54%;
+    top: 39%;
+  }
+    
+  span[data-size-name="arm_hole"] {
+    right: 31%;
+    top: 10%;
+  }
+    
+  span[data-size-name="sleeve_length"] {
+    left: 9%;
+    top: 15%;
+  }
+    
+  span[data-size-name="wrist"] {
+    left: 10%;
+    top: 32%;
+  }
+    
+  span[data-size-name="shirt_length"] {
+    right: 9%;
+    top: 44%;
+
+  }
+    
+  .custom_size_option_addon_input input[type='number'] {
+    -moz-appearance:textfield;
+  }
+
+  .custom_size_option_addon_input input::-webkit-outer-spin-button,
+  .custom_size_option_addon_input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+    
+  @media (max-width: 380px) {
+    #product-variants .swatch:nth-child(5) .header {
+      width: 13% !important;
+    }
+    .custom_size_option_addon_img,.custom_size_option_addon_input {
+      width: 100%;
+      padding: 5px 0;
+    }
+  }
+
+  
+</style>  
